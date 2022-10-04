@@ -1,0 +1,67 @@
+* {
+	--fg-color: black; 
+	--bg-color: white; 
+
+	--primary-color			: #3f51b5 ;
+	--primary-color-light	: #757de8 ;
+	--primary-color-dark	: #002984 ;
+
+	--accent-color 			: #f44336 ;
+	--accent-color-light 	: #ff7961 ;
+	--accent-color-dark 	: #ba000d ;
+
+	--inactive-color 		: lightgrey ;
+}
+
+.primary-bg{
+	background-color: var(--primary-color);
+}
+
+.accent-bg{
+	background-color: var(--accent-color);
+}
+
+
+.light-primary-bg{
+	background-color: var(--primary-color-light);
+}
+
+.light-accent-bg{
+	background-color: var(--accent-color-light);
+}
+
+.dark-primary-bg{
+	background-color: var(--primary-color-dark);
+}
+
+.dark-accent-bg{
+	background-color: var(--accent-color-dark);
+}
+
+.primary-fg{
+	color: var(--primary-color);
+}
+
+.accent-fg{
+	color: var(--accent-color);
+}
+
+.text-bg{
+	color:var(--bg-color)
+}
+
+.background-bg{
+	background-color: var(--bg-color);
+}
+
+.background-fg{
+	background-color: var(--fg-color);
+}
+
+.inactive-bg{
+	background-color: var(--inactive-color);	
+}
+
+.inactive-fg {
+	color: var(--inactive-color);
+}
