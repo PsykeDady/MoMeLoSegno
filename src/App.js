@@ -19,7 +19,7 @@ function App() {
 
 	let [flagInsert,setFlagInsert] = useState(false)
 
-	let  addAudio = (title, description)=>{
+	let  addNote = (title, description)=>{
 		setNotes([...notes, new NotaModel(id++,title,description)])
 		setFlagInsert(false)
 	}
@@ -30,7 +30,7 @@ function App() {
 	
 
 	let insertNoteModal= flagInsert && <InsertNoteComponent
-		onAdd={addAudio}
+		onAdd={addNote}
 		onDismiss={()=>{setFlagInsert(false)}}
 	></InsertNoteComponent>
 
@@ -53,23 +53,23 @@ function App() {
 				</p>;
 	
 
-  return <div>
+	return <div>
 
 
-	<div className='container-fluid'>
-		{notesComponent}
-	</div>
-	<hr
-		className="text-muted col-10 offset-1"
-	/>
+		<div className='container-fluid'>
+			{notesComponent}
+		</div>
+		<hr
+			className="text-muted col-10 offset-1"
+		/>
 
-	<div className='m-3'>
-		<AddNoteButtonComponent onAddNote={()=>{window.scroll(0,0);  setFlagInsert(true)}}></AddNoteButtonComponent>
-	</div>
-		
-	{insertNoteModal}
+		<div className='m-3'>
+			<AddNoteButtonComponent onAddNote={()=>{window.scroll(0,0);  setFlagInsert(true)}}></AddNoteButtonComponent>
+		</div>
+			
+		{insertNoteModal}
 
-  </div>;
+	</div>;
 }
 
 export default App;
